@@ -1,19 +1,127 @@
 *{
     margin: 0;
     padding: 0;
-    background: #000;
-   
-}
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-h2{
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    margin: 10px;
+}
+nav ul li a{
+   color: black;
+   text-decoration: none;
+   font-weight: 500;
+
+}
+
+/* ACTION BUTTON */
+.action-btn .btn{
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 5px;
+    padding: 7px 20px;
+
+}
+.card{
+    overflow: hidden;
+}
+
+.table{
+    width: 100% !important;
+}
+table{
+    width: 100% !important;
+  
+}
+table td{
+    border: 1px solid red !important;
+    padding: 10px;
+}
+.list-section .container{
+    justify-content: center;
+}
+.list-section ul{
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 0px;
+
+}
+.list-section ul li{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.4);
+}
+.list-section ul li:last-child{
+    border:none;
+}
+.graph{
+    padding: 30px;
+}
+
+.g_box{
+    width: 100%;
+    height: 200px;
+    border: 0.5px solid rgba(0,0,0,0.4);
+    border-radius: 14px;
+    padding: 20px;
+
+}
+
+/* Input Box Event Hendal */
+
+.input_Box #textBox{
+    padding: 8px 20px;
+    border:1px solid rgba(0,0,0,0.4);
+    border-radius: 4px;
+
+}
+form .input-group{
+    display: block;
+}
+form input{
+    width: 100% !important;
+}
+form select{
+    width: 100% !important;
+}
+
+#error{
     color: red;
-    font-size: 60px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+#postList{
+    display: flex !important;
+    width: 100%;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+#postList .card{
+    width: 30%;
+    flex-basis: 250px;
+    flex-grow: 1;
+    flex-flow: 1;
+    margin: 5px;
+
+}
+#postList .card h2{
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    font-size: 30px;
+}
+#postList .card h3{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#postList .card p{
+    font-size: 12px;
 }
